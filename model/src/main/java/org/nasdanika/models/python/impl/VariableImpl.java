@@ -2,16 +2,11 @@
  */
 package org.nasdanika.models.python.impl;
 
-import java.util.Collection;
-import org.eclipse.emf.common.notify.NotificationChain;
-import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.ecore.EClass;
+import java.util.List;
 
-import org.eclipse.emf.ecore.InternalEObject;
-import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.emf.ecore.EClass;
 import org.nasdanika.models.python.PythonPackage;
 import org.nasdanika.models.python.Variable;
-import org.nasdanika.models.source.Source;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,6 +22,16 @@ import org.nasdanika.models.source.Source;
  * @generated
  */
 public class VariableImpl extends NamedElementImpl implements Variable {
+	/**
+	 * The default value of the '{@link #getExpression() <em>Expression</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExpression()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String EXPRESSION_EDEFAULT = null;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,8 +58,8 @@ public class VariableImpl extends NamedElementImpl implements Variable {
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public EList<Source> getExpression() {
-		return (EList<Source>)eDynamicGet(PythonPackage.VARIABLE__EXPRESSION, PythonPackage.Literals.VARIABLE__EXPRESSION, true, true);
+	public String getExpression() {
+		return (String)eDynamicGet(PythonPackage.VARIABLE__EXPRESSION, PythonPackage.Literals.VARIABLE__EXPRESSION, true, true);
 	}
 
 	/**
@@ -63,12 +68,8 @@ public class VariableImpl extends NamedElementImpl implements Variable {
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case PythonPackage.VARIABLE__EXPRESSION:
-				return ((InternalEList<?>)getExpression()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+	public void setExpression(String newExpression) {
+		eDynamicSet(PythonPackage.VARIABLE__EXPRESSION, PythonPackage.Literals.VARIABLE__EXPRESSION, newExpression);
 	}
 
 	/**
@@ -95,8 +96,7 @@ public class VariableImpl extends NamedElementImpl implements Variable {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case PythonPackage.VARIABLE__EXPRESSION:
-				getExpression().clear();
-				getExpression().addAll((Collection<? extends Source>)newValue);
+				setExpression((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -111,7 +111,7 @@ public class VariableImpl extends NamedElementImpl implements Variable {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case PythonPackage.VARIABLE__EXPRESSION:
-				getExpression().clear();
+				setExpression(EXPRESSION_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -126,9 +126,31 @@ public class VariableImpl extends NamedElementImpl implements Variable {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case PythonPackage.VARIABLE__EXPRESSION:
-				return !getExpression().isEmpty();
+				return EXPRESSION_EDEFAULT == null ? getExpression() != null : !EXPRESSION_EDEFAULT.equals(getExpression());
 		}
 		return super.eIsSet(featureID);
 	}
+		
+	/**
+	 * Generates a list of sources from contents.
+	 * When merging, source ranges are used to replace fragments in the original source.
+	 * @param tokenSource
+	 * @return
+	 */
+	@Override
+	protected List<org.nasdanika.models.source.Source> generateContents(java.util.function.Function<String, String> tokenSource, int indent) {
+		List<org.nasdanika.models.source.Source> contents = super.generateContents(null, indent); // Import manager?
+		
+		StringBuilder builder = indent(indent);
+		builder
+			.append(getName())
+			.append(" = ")
+			.append(getExpression())
+			.append(System.lineSeparator());
+		
+		contents.add(org.nasdanika.models.source.Source.create(builder));
+		return contents;
+	}			
+	
 
 } //VariableImpl

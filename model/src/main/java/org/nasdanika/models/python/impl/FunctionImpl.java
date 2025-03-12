@@ -265,7 +265,6 @@ public class FunctionImpl extends NamedElementImpl implements Function {
 		}
 		
 		return contents;
-	}		
-	
+	}			
 
 } //FunctionImpl

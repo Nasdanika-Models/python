@@ -16,7 +16,7 @@ import org.nasdanika.models.python.Class;
 import org.nasdanika.models.python.Function;
 import org.nasdanika.models.python.Import;
 import org.nasdanika.models.python.PythonFactory;
-import org.nasdanika.models.python.Source;
+import org.nasdanika.models.python.Variable;
 
 public class PythonTests {
 	
@@ -50,8 +50,14 @@ public class PythonTests {
 		# Learn more about YAML configuration files here:
 		# Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended
 		# Tasks: https://docs.crewai.com/concepts/tasks#yaml-configuration-recommended
-				
+		agents_config = 'config/agents.yaml'		
 		"""));
+		
+		// Variable
+		Variable taskConfig = pythonFactory.createVariable();
+		taskConfig.setName("task_config");
+		taskConfig.setExpression("'config/tasks.yaml'");
+		pClass.getBody().add(taskConfig);
 		
 		// Function
 		Function researcherFunction = pythonFactory.createFunction();
@@ -81,11 +87,6 @@ public class PythonTests {
 		researcherFunction.getImports().add(agentImport);
 		
 		pClass.getBody().add(researcherFunction);
-		
-		// Variable
-		
-		// Source - comment
-		
 		
 		pythonResource.save(null);
 	}

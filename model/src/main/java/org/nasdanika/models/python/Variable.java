@@ -2,10 +2,6 @@
  */
 package org.nasdanika.models.python;
 
-import org.eclipse.emf.common.util.EList;
-import org.nasdanika.models.source.Source;
-
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Variable</b></em>'.
@@ -25,14 +21,24 @@ import org.nasdanika.models.source.Source;
 public interface Variable extends NamedElement {
 
 	/**
-	 * Returns the value of the '<em><b>Expression</b></em>' containment reference list.
-	 * The list contents are of type {@link org.nasdanika.models.source.Source}.
+	 * Returns the value of the '<em><b>Expression</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Expression</em>' containment reference list.
+	 * @return the value of the '<em>Expression</em>' attribute.
+	 * @see #setExpression(String)
 	 * @see org.nasdanika.models.python.PythonPackage#getVariable_Expression()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
-	EList<Source> getExpression();
+	String getExpression();
+
+	/**
+	 * Sets the value of the '{@link org.nasdanika.models.python.Variable#getExpression <em>Expression</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Expression</em>' attribute.
+	 * @see #getExpression()
+	 * @generated
+	 */
+	void setExpression(String value);
 } // Variable

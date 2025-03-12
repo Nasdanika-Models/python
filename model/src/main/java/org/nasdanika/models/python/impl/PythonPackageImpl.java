@@ -280,8 +280,8 @@ public class PythonPackageImpl extends EPackageImpl implements PythonPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getVariable_Expression() {
-		return (EReference)variableEClass.getEStructuralFeatures().get(0);
+	public EAttribute getVariable_Expression() {
+		return (EAttribute)variableEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -371,7 +371,7 @@ public class PythonPackageImpl extends EPackageImpl implements PythonPackage {
 		createEReference(functionEClass, FUNCTION__BODY);
 
 		variableEClass = createEClass(VARIABLE);
-		createEReference(variableEClass, VARIABLE__EXPRESSION);
+		createEAttribute(variableEClass, VARIABLE__EXPRESSION);
 
 		classEClass = createEClass(CLASS);
 		createEReference(classEClass, CLASS__BODY);
@@ -436,7 +436,7 @@ public class PythonPackageImpl extends EPackageImpl implements PythonPackage {
 		initEReference(getFunction_Body(), theSourcePackage.getSource(), null, "body", null, 0, -1, Function.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(variableEClass, Variable.class, "Variable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getVariable_Expression(), theSourcePackage.getSource(), null, "expression", null, 0, -1, Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVariable_Expression(), ecorePackage.getEString(), "expression", null, 0, 1, Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(classEClass, org.nasdanika.models.python.Class.class, "Class", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getClass_Body(), theSourcePackage.getSource(), null, "body", null, 0, -1, org.nasdanika.models.python.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -793,7 +793,7 @@ public interface PythonPackage extends EPackage {
 	int VARIABLE__NAME = NAMED_ELEMENT__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Expression</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Expression</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1241,15 +1241,15 @@ public interface PythonPackage extends EPackage {
 	EClass getVariable();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link org.nasdanika.models.python.Variable#getExpression <em>Expression</em>}'.
+	 * Returns the meta object for the attribute '{@link org.nasdanika.models.python.Variable#getExpression <em>Expression</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Expression</em>'.
+	 * @return the meta object for the attribute '<em>Expression</em>'.
 	 * @see org.nasdanika.models.python.Variable#getExpression()
 	 * @see #getVariable()
 	 * @generated
 	 */
-	EReference getVariable_Expression();
+	EAttribute getVariable_Expression();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.python.Class <em>Class</em>}'.
@@ -1440,12 +1440,12 @@ public interface PythonPackage extends EPackage {
 		EClass VARIABLE = eINSTANCE.getVariable();
 
 		/**
-		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Expression</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference VARIABLE__EXPRESSION = eINSTANCE.getVariable_Expression();
+		EAttribute VARIABLE__EXPRESSION = eINSTANCE.getVariable_Expression();
 
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.python.impl.ClassImpl <em>Class</em>}' class.
