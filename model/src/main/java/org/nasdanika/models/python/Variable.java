@@ -41,4 +41,12 @@ public interface Variable extends NamedElement {
 	 * @generated
 	 */
 	void setExpression(String value);
+	
+	static Variable createVariable(String name, String expression) {
+		Variable ret = PythonFactory.eINSTANCE.createVariable();
+		ret.setName(name);
+		ret.setExpression(expression);
+		return ret;
+	}
+	
 } // Variable

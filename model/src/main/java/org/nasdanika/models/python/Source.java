@@ -2,6 +2,9 @@
  */
 package org.nasdanika.models.python;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -32,5 +35,43 @@ public interface Source extends org.nasdanika.models.source.Source {
 	 * @generated
 	 */
 	EList<Import> getImports();
+		
+	default Import addModuleImport(String moduleName) {		
+		Import ret = Import.createModuleImport(moduleName);
+		getImports().add(ret);
+		return ret;
+	}
+	
+	default Import addModuleImport(String moduleName, String alias) {
+		Import ret = Import.createModuleImport(moduleName, alias);
+		getImports().add(ret);
+		return ret;
+	}
+		
+	default Import addItemImport(String moduleName, String item) {
+		Import ret = Import.createItemImport(moduleName, item);
+		getImports().add(ret);
+		return ret;
+	}
+	
+	/**
+	 * Multiple imports for the same module
+	 * @param moduleName
+	 * @param item
+	 * @return
+	 */
+	default List<Import> addItemImports(String moduleName, String... items) {
+		return Arrays
+				.stream(items)
+				.map(item -> addItemImport(moduleName, item))
+				.toList();
+	}
+		
+	default Import addItemImport(String moduleName, String item, String name) {
+		Import ret = Import.createItemImport(moduleName, item, name);
+		getImports().add(ret);
+		return ret;
+	}		
+	
 
 } // Source

@@ -111,5 +111,29 @@ public interface Import extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
+	
+	static Import createModuleImport(String moduleName) {
+		Import ret = PythonFactory.eINSTANCE.createImport();
+		ret.setModule(moduleName);
+		return ret;
+	}
+	
+	static Import createModuleImport(String moduleName, String alias) {
+		Import ret = createModuleImport(moduleName);
+		ret.setAlias(alias);
+		return ret;
+	}
+		
+	static Import createItemImport(String moduleName, String item) {
+		Import ret = createModuleImport(moduleName);
+		ret.setItem(item);
+		return ret;
+	}
+		
+	static Import createItemImport(String moduleName, String item, String name) {
+		Import ret = createItemImport(moduleName, item);
+		ret.setName(name);
+		return ret;
+	}		
 
 } // Import
