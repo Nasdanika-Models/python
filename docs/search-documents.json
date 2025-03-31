@@ -1,37 +1,115 @@
 {
   "references/eClassifiers/Class/inheritance.html": {
     "path": "Class/Inheritance",
-    "link-uuid": "01bfb33b-28c4-4816-b1f3-4eeddff1f947",
+    "link-uuid": "06a65dcb-aad5-431c-b6f0-006ed1cfa1f8",
     "title": "Inheritance",
     "content": "Supertypes "
+  },
+  "references/eClassifiers/Variable/references/eStructuralFeatures/expression/index.html": {
+    "path": "Variable/Attributes/expression",
+    "link-uuid": "33622f70-6558-4adb-8c66-b183c7a07ce8",
+    "title": "expression",
+    "content": "Type EString Multiplicity 0..1"
+  },
+  "references/eClassifiers/Source/references/eStructuralFeatures/imports/index.html": {
+    "path": "Source/References/imports",
+    "link-uuid": "3f102d5d-b611-4686-89eb-f86916195b02",
+    "title": "imports",
+    "content": "Type Import Multiplicity 0..*"
   },
   "references/eClassifiers/Function/inheritance.html": {
     "path": "Function/Inheritance",
-    "link-uuid": "5bd25b7f-ea15-4c04-8a84-837b3d937441",
+    "link-uuid": "bb0966c4-7ac9-4546-aee0-7483d33d9200",
     "title": "Inheritance",
     "content": "Supertypes "
   },
-  "references/eClassifiers/NamedElement/inheritance.html": {
-    "path": "NamedElement/Inheritance",
-    "link-uuid": "f0a76298-1da6-48ec-94a3-e1c56d95936c",
-    "title": "Inheritance",
-    "content": "Supertypes Subtypes  "
-  },
-  "index.html": {
-    "link-uuid": "dc7f650b-f108-497f-ac66-c13136c0f9a6",
-    "title": "Python Model",
-    "content": "The Python model can be used for generation of Python code. It takes care of indentation and import management, which simplifies &ldquo;assembly&rdquo; of Python sources from multiple elements. Example PythonTests.java: // Building\nPythonFactory pythonFactory = PythonFactory.eINSTANCE;\n\n// Class\nClass pClass = pythonFactory.createClass();\npClass.setName(&quot;LatestAiDevelopment&quot;);\npClass.getDecorators().add(&quot;CrewBase&quot;);\npClass.addItemImport(&quot;crewai.project&quot;, &quot;CrewBase&quot;);\n\norg.nasdanika.models.source.Source classDoc = org.nasdanika.models.source.Source.create(&quot;\\&quot;\\&quot;\\&quot;LatestAiDevelopment crew\\&quot;\\&quot;\\&quot;&quot;);\npClass.getBody().add(classDoc);\n\npClass.getBody().add(org.nasdanika.models.source.Source.create(\n\t&quot;&quot;&quot;\n\n\t# Learn more about YAML configuration files here:\n\t# Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended\n\t# Tasks: https://docs.crewai.com/concepts/tasks#yaml-configuration-recommended\n\tagents_config = 'config/agents.yaml'\n\t&quot;&quot;&quot;));\n\n// Variable\nVariable taskConfig = pythonFactory.createVariable();\ntaskConfig.setName(&quot;task_config&quot;);\ntaskConfig.setExpression(&quot;'config/tasks.yaml'&quot;);\npClass.getBody().add(taskConfig);\n\n// Function\nFunction researcherFunction = pythonFactory.createFunction();\norg.nasdanika.models.source.Source researcherFunctionBody = org.nasdanika.models.source.Source.create(\n\t&quot;&quot;&quot;\n\treturn Agent(\n\t\tconfig=self.agents_config['researcher'],\n\t\tverbose=True\n\t)\n\t&quot;&quot;&quot;);\n\nresearcherFunction.getBody().add(researcherFunctionBody);\nresearcherFunction.setAnnotation(&quot;Agent&quot;);\nresearcherFunction.setName(&quot;researcher&quot;);\nresearcherFunction.getParameters().add(&quot;self&quot;);\nresearcherFunction.getDecorators().add(&quot;agent&quot;);\nresearcherFunction.addItemImport(&quot;crewai&quot;, &quot;Agent&quot;);\nresearcherFunction.addItemImport(&quot;crewai.project&quot;, &quot;agent&quot;);\npClass.getBody().add(researcherFunction);\n\n// Saving\nCapabilityLoader capabilityLoader = new CapabilityLoader();\nProgressMonitor progressMonitor = new PrintStreamProgressMonitor();\nRequirement&lt;ResourceSetRequirement, ResourceSet&gt; requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);\nResourceSet resourceSet = capabilityLoader.loadOne(requirement, progressMonitor);\n\nFile pythonFile = new File(&quot;target/test.py&quot;).getCanonicalFile();\nResource pythonResource = resourceSet.createResource(URI.createFileURI(pythonFile.getAbsolutePath()));\npythonResource.getContents().add(pClass);\npythonResource.save(null);\n Output: from crewai import Agent\nfrom crewai.project import CrewBase, agent\n@CrewBase\nclass LatestAiDevelopment:\n    &quot;&quot;&quot;LatestAiDevelopment crew&quot;&quot;&quot;\n\n    # Learn more about YAML configuration files here:\n    # Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended\n    # Tasks: https://docs.crewai.com/concepts/tasks#yaml-configuration-recommended\n    agents_config = 'config/agents.yaml'\n    task_config = 'config/tasks.yaml'\n    @agent\n    def researcher(self) -&gt; Agent:\n        return Agent(\n        \tconfig=self.agents_config['researcher'],\n        \tverbose=True\n        )"
+  "references/eClassifiers/Class/references/eStructuralFeatures/decorators/index.html": {
+    "path": "Class/Attributes/decorators",
+    "link-uuid": "5a7e01a8-a0ae-4569-a320-f09ed250d951",
+    "title": "decorators",
+    "content": "Type EString Multiplicity 0..*"
   },
   "references/eClassifiers/Variable/inheritance.html": {
     "path": "Variable/Inheritance",
-    "link-uuid": "897cdc57-8c63-4715-9135-ea74aca2086f",
+    "link-uuid": "3c4f7668-53ca-445b-bb97-b2b681306e27",
     "title": "Inheritance",
     "content": "Supertypes "
   },
+  "references/eClassifiers/Function/references/eStructuralFeatures/annotation/index.html": {
+    "path": "Function/Attributes/annotation",
+    "link-uuid": "b48bba77-687f-4ae9-ad17-52e067aecf4d",
+    "title": "annotation",
+    "content": "Type EString Multiplicity 0..1"
+  },
+  "references/eClassifiers/Import/references/eStructuralFeatures/item/index.html": {
+    "path": "Import/Attributes/item",
+    "link-uuid": "31f68c08-896b-4db4-be39-cd42f0b1e493",
+    "title": "item",
+    "content": "Type EString Multiplicity 0..1"
+  },
+  "references/eClassifiers/Function/references/eStructuralFeatures/decorators/index.html": {
+    "path": "Function/Attributes/decorators",
+    "link-uuid": "a6fa9e65-ec90-4043-8948-4fe82ff08c58",
+    "title": "decorators",
+    "content": "Type EString Multiplicity 0..*"
+  },
+  "references/eClassifiers/Function/references/eStructuralFeatures/parameters/index.html": {
+    "path": "Function/Attributes/parameters",
+    "link-uuid": "ca4ccc58-aef5-4070-8d6a-16b836ca1822",
+    "title": "parameters",
+    "content": "Type EString Multiplicity 0..*"
+  },
   "references/eClassifiers/Source/inheritance.html": {
     "path": "Source/Inheritance",
-    "link-uuid": "192bc716-afa3-40c5-978b-d013c8c2703e",
+    "link-uuid": "a244f3df-aa35-4e61-8685-ecc8d714f524",
     "title": "Inheritance",
     "content": "Supertypes Subtypes  "
+  },
+  "references/eClassifiers/NamedElement/inheritance.html": {
+    "path": "NamedElement/Inheritance",
+    "link-uuid": "15e10e3a-809c-400b-9eed-94fc8c561793",
+    "title": "Inheritance",
+    "content": "Supertypes Subtypes  "
+  },
+  "references/eClassifiers/Import/references/eStructuralFeatures/name/index.html": {
+    "path": "Import/Attributes/name",
+    "link-uuid": "e78b2c8b-004b-4f2b-8f67-9d95624d13d2",
+    "title": "name",
+    "content": "Type EString Multiplicity 0..1"
+  },
+  "index.html": {
+    "link-uuid": "b13482ab-0fcb-4b93-bd1d-4c8be90be3ac",
+    "title": "Python Model",
+    "content": "The Python model can be used for generation of Python code. It takes care of indentation and import management, which simplifies &ldquo;assembly&rdquo; of Python sources from multiple elements. Example PythonTests.java: // Building\nPythonFactory pythonFactory = PythonFactory.eINSTANCE;\n\n// Class\nClass pClass = pythonFactory.createClass();\npClass.setName(&quot;LatestAiDevelopment&quot;);\npClass.getDecorators().add(&quot;CrewBase&quot;);\npClass.addItemImport(&quot;crewai.project&quot;, &quot;CrewBase&quot;);\n\norg.nasdanika.models.source.Source classDoc = org.nasdanika.models.source.Source.create(&quot;\\&quot;\\&quot;\\&quot;LatestAiDevelopment crew\\&quot;\\&quot;\\&quot;&quot;);\npClass.getBody().add(classDoc);\n\npClass.getBody().add(org.nasdanika.models.source.Source.create(\n\t&quot;&quot;&quot;\n\n\t# Learn more about YAML configuration files here:\n\t# Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended\n\t# Tasks: https://docs.crewai.com/concepts/tasks#yaml-configuration-recommended\n\tagents_config = 'config/agents.yaml'\n\t&quot;&quot;&quot;));\n\n// Variable\nVariable taskConfig = pythonFactory.createVariable();\ntaskConfig.setName(&quot;task_config&quot;);\ntaskConfig.setExpression(&quot;'config/tasks.yaml'&quot;);\npClass.getBody().add(taskConfig);\n\n// Function\nFunction researcherFunction = pythonFactory.createFunction();\norg.nasdanika.models.source.Source researcherFunctionBody = org.nasdanika.models.source.Source.create(\n\t&quot;&quot;&quot;\n\treturn Agent(\n\t\tconfig=self.agents_config['researcher'],\n\t\tverbose=True\n\t)\n\t&quot;&quot;&quot;);\n\nresearcherFunction.getBody().add(researcherFunctionBody);\nresearcherFunction.setAnnotation(&quot;Agent&quot;);\nresearcherFunction.setName(&quot;researcher&quot;);\nresearcherFunction.getParameters().add(&quot;self&quot;);\nresearcherFunction.getDecorators().add(&quot;agent&quot;);\nresearcherFunction.addItemImport(&quot;crewai&quot;, &quot;Agent&quot;);\nresearcherFunction.addItemImport(&quot;crewai.project&quot;, &quot;agent&quot;);\npClass.getBody().add(researcherFunction);\n\n// Saving\nCapabilityLoader capabilityLoader = new CapabilityLoader();\nProgressMonitor progressMonitor = new PrintStreamProgressMonitor();\nRequirement&lt;ResourceSetRequirement, ResourceSet&gt; requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);\nResourceSet resourceSet = capabilityLoader.loadOne(requirement, progressMonitor);\n\nFile pythonFile = new File(&quot;target/test.py&quot;).getCanonicalFile();\nResource pythonResource = resourceSet.createResource(URI.createFileURI(pythonFile.getAbsolutePath()));\npythonResource.getContents().add(pClass);\npythonResource.save(null);\n Output: from crewai import Agent\nfrom crewai.project import CrewBase, agent\n@CrewBase\nclass LatestAiDevelopment:\n    &quot;&quot;&quot;LatestAiDevelopment crew&quot;&quot;&quot;\n\n    # Learn more about YAML configuration files here:\n    # Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended\n    # Tasks: https://docs.crewai.com/concepts/tasks#yaml-configuration-recommended\n    agents_config = 'config/agents.yaml'\n    task_config = 'config/tasks.yaml'\n    @agent\n    def researcher(self) -&gt; Agent:\n        return Agent(\n        \tconfig=self.agents_config['researcher'],\n        \tverbose=True\n        )"
+  },
+  "references/eClassifiers/Import/references/eStructuralFeatures/module/index.html": {
+    "path": "Import/Attributes/module",
+    "link-uuid": "02852ada-7fb3-428d-af6a-402a791c1ee3",
+    "title": "module",
+    "content": "Type EString Multiplicity 0..1"
+  },
+  "references/eClassifiers/Class/references/eStructuralFeatures/parents/index.html": {
+    "path": "Class/Attributes/parents",
+    "link-uuid": "682bf3fd-f70d-4ca6-8df5-4f1a26e605e8",
+    "title": "parents",
+    "content": "Type EString Multiplicity 0..*"
+  },
+  "references/eClassifiers/Import/references/eStructuralFeatures/alias/index.html": {
+    "path": "Import/Attributes/alias",
+    "link-uuid": "5c8b1c1c-1978-4efc-9bfe-0db4215a0dff",
+    "title": "alias",
+    "content": "Type EString Multiplicity 0..1"
+  },
+  "references/eClassifiers/Class/references/eStructuralFeatures/body/index.html": {
+    "path": "Class/References/body",
+    "link-uuid": "3e339b84-12cd-456d-a16a-bad68d34f73f",
+    "title": "body",
+    "content": "Type Source Multiplicity 0..*"
+  },
+  "references/eClassifiers/Function/references/eStructuralFeatures/body/index.html": {
+    "path": "Function/References/body",
+    "link-uuid": "67786418-fa75-4359-9a23-42a1083ba6dd",
+    "title": "body",
+    "content": "Type Source Multiplicity 0..*"
   }
 }
