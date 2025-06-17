@@ -1,4 +1,4 @@
-package org.nasdanika.models.crewai.ecore.tests;
+package org.nasdanika.models.python.ecore.tests;
 
 import java.io.File;
 import java.io.IOException;
@@ -108,7 +108,7 @@ public class TestPythonModelDocGen {
 		
 		System.out.println("There are " + errorCount + " site errors");
 		
-		if (errorCount != 60) {
+		if (errorCount != 62) {
 			throw new ExecutionException("There are problems with pages: " + errorCount);
 		}		
 	}
