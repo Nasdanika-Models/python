@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="EN">
   <head>
-    <title>Circular Graph</title>
+    <title>Force Graph 3D</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -36,11 +36,14 @@
 </script>    
 </head>
   <body>
-    <div tabindex="-1" id="nsd_bm" class="modal">
+    <div tabindex="-1" id="nsd_84" class="modal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">Hover mouse over nodes elements to display tooltips.
 Double-click on nodes to navigate go documentation.
+Left click - rotate.
+Mouse wheel - zoom.
+Right click - pan.
 Drag to rearrange.
 </div>
         </div>
@@ -63,9 +66,9 @@ Drag to rearrange.
           <ul class="navbar navbar-light navbar-expand-lg">
             <a href="../../../index.html" title="A model of a Python language elements for the purposes of code generation" data-nsd-label-uuid="c7bd5ceb-17bc-43d4-a6da-9b285e6051f9" class="navbar-brand">
               <img src="https://docs.nasdanika.org/images/python.svg" class="nsd-app-label-icon"/>Python Model</a>
-            <button type="button" data-toggle="collapse" data-target="#nsd_bf" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            <button type="button" data-toggle="collapse" data-target="#nsd_7x" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd_bf" class="collapse navbar-collapse">
+            <div id="nsd_7x" class="collapse navbar-collapse">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <a href="../../../classifiers.html" data-nsd-label-uuid="8814ad8b-7af5-4880-873c-48b5a9878a33" class="nav-link">Classifiers</a>
@@ -100,13 +103,13 @@ Drag to rearrange.
       <div class="row nsd-app-content-row">
         <div class="col nsd-app-navigation-panel">
           <div class="list-group list-group-flush">
-            <a href="index.html" data-nsd-label-uuid="d1daf317-66f9-4323-aa6d-44fcf4b8af42" class="list-group-item list-group-action active">
+            <a href="../Class/index.html" data-nsd-label-uuid="d1daf317-66f9-4323-aa6d-44fcf4b8af42" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Class</a>
             <a href="../Function/index.html" data-nsd-label-uuid="b3717781-4749-4f25-a75d-ee7a212c8524" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Function</a>
             <a href="../Import/index.html" data-nsd-label-uuid="3e9518ea-33a3-4ea6-8a00-51d3df79edf4" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Import</a>
-            <a href="../NamedElement/index.html" data-nsd-label-uuid="dfe4a5e3-af1c-457c-8767-9626d07e7e90" class="list-group-item list-group-action">
+            <a href="index.html" data-nsd-label-uuid="dfe4a5e3-af1c-457c-8767-9626d07e7e90" class="list-group-item list-group-action active">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>NamedElement</a>
             <a href="../Source/index.html" data-nsd-label-uuid="76aa37ec-79f6-4666-82f1-6e4f5793531e" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Source</a>
@@ -114,19 +117,19 @@ Drag to rearrange.
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Variable</a>
           </div>
         </div>
-        <div data-nsd-label-uuid="b66a89e8-bbe3-42b1-88d0-bacb2c6df4ca" data-nsd-action-uris="uuid:b66a89e8-bbe3-42b1-88d0-bacb2c6df4ca" class="col nsd-app-content-panel">
+        <div data-nsd-label-uuid="2999080d-257f-4b75-915f-b22e82ced22e" data-nsd-action-uris="uuid:2999080d-257f-4b75-915f-b22e82ced22e" class="col nsd-app-content-panel">
           <div class="container-fluid">
             <div class="row nsd-app-content-panel-breadcrumb-row">
               <div class="col">
                 <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="index.html" data-nsd-label-uuid="d1daf317-66f9-4323-aa6d-44fcf4b8af42">
-                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Class</a>
+                      <a href="index.html" data-nsd-label-uuid="dfe4a5e3-af1c-457c-8767-9626d07e7e90">
+                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>NamedElement</a>
                     </li>
-                    <li class="breadcrumb-item"><span data-nsd-label-uuid="47299d88-c7d5-41b6-9137-033e9c7369a7"><img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon"/>Graphs</span>
+                    <li class="breadcrumb-item"><span data-nsd-label-uuid="c1640530-df4a-4a68-8af9-a02c4f3227ad"><img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon"/>Graphs</span>
                     </li>
-                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="b66a89e8-bbe3-42b1-88d0-bacb2c6df4ca">Circular Graph</span>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="2999080d-257f-4b75-915f-b22e82ced22e">Force Graph 3D</span>
                     </li>
                   </ol>
                 </nav>
@@ -134,7 +137,7 @@ Drag to rearrange.
             </div>
             <div class="row nsd-app-content-panel-title-and-items-row">
               <div class="col-auto">
-                <H1><span data-nsd-label-uuid="b66a89e8-bbe3-42b1-88d0-bacb2c6df4ca" class="nsd-app-content-panel-title">Circular Graph<a data-toggle="modal" data-target="#nsd_bm" href="#" title="A circular layout graph of this classifier and related classifiers showing relationships between them" style="vertical-align:super;font-size:x-small;margin-left:0.2em"><span class="far fa-question-circle nsd-app-label-icon"></span></a></span>
+                <H1><span data-nsd-label-uuid="2999080d-257f-4b75-915f-b22e82ced22e" class="nsd-app-content-panel-title">Force Graph 3D<a data-toggle="modal" data-target="#nsd_84" href="#" title="A live force-layout graph of package classifiers showing detailed relationships between them" style="vertical-align:super;font-size:x-small;margin-left:0.2em"><span class="far fa-question-circle nsd-app-label-icon"></span></a></span>
                 </H1>
               </div>
             </div>
@@ -142,34 +145,166 @@ Drag to rearrange.
               <div class="col">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col"><div id="graph-container-22" class="row" style="height:70vh;width:100%">
+                    <div class="col"><div id="force-graph-12" class="row" style="height:70vh;width:100%">
 </div>
-<script type="text/javascript">
-	$(document).ready(function() {
-		var dom = document.getElementById("graph-container-22");
-		var myChart = echarts.init(dom, null, {
-			render: "canvas",
-			useDirtyRect: false
-		});
-		var option = {"legend":{},"series":[{"type":"graph","emphasis":{"focus":"adjacency"},"data":[{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"NamedElement@ecore://nasdanika.org/models/python","name":"NamedElement","value":{"externalLink":"../NamedElement/index.html"},"x":262.8338328416872,"y":549.2376007942318,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EDataType.gif","id":"EString@http://www.eclipse.org/emf/2002/Ecore","name":"EString","value":{"externalLink":"https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html"},"x":776.6086609632885,"y":423.3735897719439,"category":1},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Class@ecore://nasdanika.org/models/python","name":"Class","value":{"externalLink":""},"x":521.6496533481894,"y":426.27236139388435,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Source@ecore://nasdanika.org/models/source","name":"Source","value":{"externalLink":"https://source-engineering.models.nasdanika.org/references/eClassifiers/Source/index.html"},"x":684.9506357195617,"y":230.45283326265587,"category":2}],"symbolSize":20,"roam":true,"layout":"circular","links":[{"source":0,"target":2},{"source":2,"target":0},{"source":2,"target":1},{"source":2,"target":3},{"source":3,"target":1},{"source":3,"target":2}],"categories":[{"name":"python"},{"name":"ecore"},{"name":"source"}],"draggable":true,"label":{"show":true,"position":"right"},"lineStyle":{"color":"source","curveness":0.3},"circular":{"rotateLabel":true}}]};
-		option.tooltip = {};
-		option.series[0].tooltip = {
-			formatter: function(arg) {
-				return arg.value ? arg.value.description : null;
-			}
-		};
-		myChart.setOption(option);
-		myChart.on("dblclick", function(params) {
-			if (params.value) {
-				if (params.value.link) {
-					window.open(params.value.link, "_self");
-				} else if (params.value.externalLink) {
-					window.open(params.value.externalLink);
+<script type="module">
+	import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+	import SpriteText from "https://cdn.jsdelivr.net/npm/three-spritetext@1.10.0/dist/three-spritetext.mjs";
+
+	        new ForceGraph3D(
+                document.getElementById('force-graph-12'), 
+                {
+                        extraRenderers: [
+                                new CSS2DRenderer()
+                        ]
+                })
+                .graphData({
+          "nodes": [
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 3,
+              "name": "Variable",
+              "id": "Variable@ecore://nasdanika.org/models/python",
+              "value": [{"externalLink": "../Variable/index.html"}],
+              "group": "ecore://nasdanika.org/models/python"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 3,
+              "name": "NamedElement",
+              "id": "NamedElement@ecore://nasdanika.org/models/python",
+              "value": [{"externalLink": ""}],
+              "group": "ecore://nasdanika.org/models/python"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 3,
+              "name": "Source",
+              "id": "Source@ecore://nasdanika.org/models/python",
+              "value": [{"externalLink": "../Source/index.html"}],
+              "group": "ecore://nasdanika.org/models/python"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 3,
+              "name": "NamedElement",
+              "id": "NamedElement@ecore://nasdanika.org/models/source",
+              "value": [{"externalLink": "https://source-engineering.models.nasdanika.org/references/eClassifiers/NamedElement/index.html"}],
+              "group": "ecore://nasdanika.org/models/source"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 4,
+              "name": "Class",
+              "id": "Class@ecore://nasdanika.org/models/python",
+              "value": [{"externalLink": "../Class/index.html"}],
+              "group": "ecore://nasdanika.org/models/python"
+            },
+            {
+              "image": "https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif",
+              "size": 4,
+              "name": "Function",
+              "id": "Function@ecore://nasdanika.org/models/python",
+              "value": [{"externalLink": "../Function/index.html"}],
+              "group": "ecore://nasdanika.org/models/python"
+            }
+          ],
+          "links": [
+            {
+              "rotation": 0,
+              "source": "Variable@ecore://nasdanika.org/models/python",
+              "target": "NamedElement@ecore://nasdanika.org/models/python",
+              "group": "inheritance",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "source": "NamedElement@ecore://nasdanika.org/models/python",
+              "target": "Source@ecore://nasdanika.org/models/python",
+              "group": "inheritance",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "source": "NamedElement@ecore://nasdanika.org/models/python",
+              "target": "NamedElement@ecore://nasdanika.org/models/source",
+              "group": "inheritance",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "source": "Class@ecore://nasdanika.org/models/python",
+              "target": "NamedElement@ecore://nasdanika.org/models/python",
+              "group": "inheritance",
+              "curvature": 0
+            },
+            {
+              "rotation": 0,
+              "source": "Function@ecore://nasdanika.org/models/python",
+              "target": "NamedElement@ecore://nasdanika.org/models/python",
+              "group": "inheritance",
+              "curvature": 0
+            }
+          ]
+        })
+                .nodeAutoColorBy('group')
+                .nodeVal('size')
+                .linkDirectionalArrowLength(2.5)
+                .linkDirectionalArrowRelPos(1)
+                .linkCurvature('curvature')
+                .linkCurveRotation('rotation')
+                .linkAutoColorBy('group')
+                .onNodeClick((node, event) => {
+       if (node.lastClick) {
+        if (event.timeStamp - node.lastClick < 500) {
+			if (Array.isArray(node.value) && node.value.length > 0) {
+				if (node.value[0].link) {
+					window.open(node.value[0].link, "_self");
+				} else if (node.value[0].externalLink) {
+					window.open(node.value[0].externalLink);
 				}
 			}
-		});
-		window.addEventListener("resize", myChart.resize);
-	});
+			delete node.lastClick;
+		} else {
+			node.lastClick = event.timeStamp;
+		}
+	} else {
+		node.lastClick = event.timeStamp;
+	}
+   })
+                .nodeThreeObject(node => {
+        const nodeEl = document.createElement('div');
+        nodeEl.textContent = node.name;
+        nodeEl.style.color = node.color;
+        nodeEl.className = 'node-label';
+        return new CSS2DObject(nodeEl);
+      })
+                .nodeThreeObjectExtend(true)
+                .linkThreeObject(link => {
+         // extend link with text sprite
+         if (link.name && !link.curvature) {
+           const sprite = new SpriteText(link.name);
+           sprite.color = 'lightgrey';
+           sprite.textHeight = 1.5;
+           return sprite;
+         }
+       })
+                .linkPositionUpdate((sprite, { start, end }) => {
+		if (sprite) {
+          const pos = Object.assign(...['x', 'y', 'z'].map(c => ({
+            [c]: start[c] + (end[c] - start[c]) / 1.3
+          })));
+
+          // Position sprite
+          Object.assign(sprite.position, pos);
+        }
+       })
+                .linkThreeObjectExtend(true)
+                .onNodeDragEnd(node => {
+          node.fx = node.x;
+          node.fy = node.y;
+          node.fz = node.z;
+        })
 </script>
 </div>
                   </div>
