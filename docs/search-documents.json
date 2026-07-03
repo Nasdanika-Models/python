@@ -1,134 +1,134 @@
 {
   "references/eClassifiers/Class/inheritance.html": {
     "path": "Class/Inheritance",
-    "link-uuid": "c412d841-5ca6-47f4-bbdf-2ccdf594c47f",
+    "link-uuid": "a4167677-11ff-43e9-82b0-251e3204fcf7",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1772632343596
+    "timestamp": 1782835264936
   },
   "references/eClassifiers/Variable/references/eStructuralFeatures/expression/index.html": {
     "path": "Variable/Attributes/expression",
-    "link-uuid": "0c5ece08-a8ef-4401-977f-6785e9228bc6",
+    "link-uuid": "f44a2a31-508d-4926-9331-3e67496a7929",
     "title": "expression",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1772632343730
+    "timestamp": 1782835265060
   },
   "references/eClassifiers/Source/references/eStructuralFeatures/imports/index.html": {
     "path": "Source/References/imports",
-    "link-uuid": "285a3ed9-fcc1-4061-8438-a507047699d7",
+    "link-uuid": "99488597-6c7f-4f89-8591-81f04c170879",
     "title": "imports",
     "content": "Type Import Multiplicity 0..*",
-    "timestamp": 1772632343710
+    "timestamp": 1782835265042
   },
   "references/eClassifiers/Function/inheritance.html": {
     "path": "Function/Inheritance",
-    "link-uuid": "84067c65-fc1b-4d41-b7eb-3b20a9fb126f",
+    "link-uuid": "5fc69072-94f3-4cbd-b49a-b7ef7fe597c3",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1772632343629
+    "timestamp": 1782835264964
   },
   "references/eClassifiers/Class/references/eStructuralFeatures/decorators/index.html": {
     "path": "Class/Attributes/decorators",
-    "link-uuid": "183ae10f-51e8-4272-ab34-161a9d1be787",
+    "link-uuid": "6800c64c-bb8b-4f9c-b230-b9f494e6e38f",
     "title": "decorators",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1772632343606
+    "timestamp": 1782835264943
   },
   "references/eClassifiers/Variable/inheritance.html": {
     "path": "Variable/Inheritance",
-    "link-uuid": "e25777f5-4304-4cc7-8136-6647f38265fb",
+    "link-uuid": "f06d3763-ac8b-43fb-8577-97f290924d59",
     "title": "Inheritance",
     "content": "Supertypes ",
-    "timestamp": 1772632343724
+    "timestamp": 1782835265054
   },
   "references/eClassifiers/Function/references/eStructuralFeatures/annotation/index.html": {
     "path": "Function/Attributes/annotation",
-    "link-uuid": "43ceddec-6f6e-4b37-a710-c18cc21add06",
+    "link-uuid": "06ff1771-8b3d-40f2-9b76-705a3f375f5a",
     "title": "annotation",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1772632343635
+    "timestamp": 1782835264970
   },
   "references/eClassifiers/Import/references/eStructuralFeatures/item/index.html": {
     "path": "Import/Attributes/item",
-    "link-uuid": "0798fc57-8d9a-4083-8cb8-6a4a40ea8074",
+    "link-uuid": "fd991fd8-1886-4465-98fb-33d674ab905f",
     "title": "item",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1772632343662
+    "timestamp": 1782835264996
   },
   "references/eClassifiers/Function/references/eStructuralFeatures/decorators/index.html": {
     "path": "Function/Attributes/decorators",
-    "link-uuid": "c6e3a852-833a-4e4f-a744-e223d08617d8",
+    "link-uuid": "893327e8-f71a-4b9a-a056-edef3791707b",
     "title": "decorators",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1772632343640
+    "timestamp": 1782835264974
   },
   "references/eClassifiers/Function/references/eStructuralFeatures/parameters/index.html": {
     "path": "Function/Attributes/parameters",
-    "link-uuid": "e217d118-f050-46ed-ac28-6f6366b6a834",
+    "link-uuid": "c021c05a-165a-403c-9f1c-037e79eaf8e4",
     "title": "parameters",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1772632343643
+    "timestamp": 1782835264976
   },
   "references/eClassifiers/Source/inheritance.html": {
     "path": "Source/Inheritance",
-    "link-uuid": "1493c262-148f-4559-bace-f219e9e84ac7",
+    "link-uuid": "361830e0-3018-4b38-a8ce-9fe87f932521",
     "title": "Inheritance",
     "content": "Supertypes Subtypes  ",
-    "timestamp": 1772632343704
+    "timestamp": 1782835265036
   },
   "references/eClassifiers/NamedElement/inheritance.html": {
     "path": "NamedElement/Inheritance",
-    "link-uuid": "e4ba9d93-c556-4e94-ac46-b8d889a5e79e",
+    "link-uuid": "ce8d8516-bb7d-4d18-808c-fb74ace515c6",
     "title": "Inheritance",
     "content": "Supertypes Subtypes  ",
-    "timestamp": 1772632343681
+    "timestamp": 1782835265016
   },
   "references/eClassifiers/Import/references/eStructuralFeatures/name/index.html": {
     "path": "Import/Attributes/name",
-    "link-uuid": "c1b02d73-a48a-41f7-a677-f2e99eb633e4",
+    "link-uuid": "ccbd178a-4584-44a6-97a7-35d8c8dd5422",
     "title": "name",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1772632343665
+    "timestamp": 1782835264999
   },
   "index.html": {
-    "link-uuid": "d7289638-3753-48ec-8d65-e10c4a49499c",
+    "link-uuid": "e7a977ba-3281-48a5-b1cd-1d51abaa437c",
     "title": "Python Model",
     "content": "The Python model can be used for generation of Python code. It takes care of indentation and import management, which simplifies &ldquo;assembly&rdquo; of Python sources from multiple elements. Example PythonTests.java: // Building\nPythonFactory pythonFactory = PythonFactory.eINSTANCE;\n\n// Class\nClass pClass = pythonFactory.createClass();\npClass.setName(&quot;LatestAiDevelopment&quot;);\npClass.getDecorators().add(&quot;CrewBase&quot;);\npClass.addItemImport(&quot;crewai.project&quot;, &quot;CrewBase&quot;);\n\norg.nasdanika.models.source.Source classDoc = org.nasdanika.models.source.Source.create(&quot;\\&quot;\\&quot;\\&quot;LatestAiDevelopment crew\\&quot;\\&quot;\\&quot;&quot;);\npClass.getBody().add(classDoc);\n\npClass.getBody().add(org.nasdanika.models.source.Source.create(\n\t&quot;&quot;&quot;\n\n\t# Learn more about YAML configuration files here:\n\t# Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended\n\t# Tasks: https://docs.crewai.com/concepts/tasks#yaml-configuration-recommended\n\tagents_config = 'config/agents.yaml'\n\t&quot;&quot;&quot;));\n\n// Variable\nVariable taskConfig = pythonFactory.createVariable();\ntaskConfig.setName(&quot;task_config&quot;);\ntaskConfig.setExpression(&quot;'config/tasks.yaml'&quot;);\npClass.getBody().add(taskConfig);\n\n// Function\nFunction researcherFunction = pythonFactory.createFunction();\norg.nasdanika.models.source.Source researcherFunctionBody = org.nasdanika.models.source.Source.create(\n\t&quot;&quot;&quot;\n\treturn Agent(\n\t\tconfig=self.agents_config['researcher'],\n\t\tverbose=True\n\t)\n\t&quot;&quot;&quot;);\n\nresearcherFunction.getBody().add(researcherFunctionBody);\nresearcherFunction.setAnnotation(&quot;Agent&quot;);\nresearcherFunction.setName(&quot;researcher&quot;);\nresearcherFunction.getParameters().add(&quot;self&quot;);\nresearcherFunction.getDecorators().add(&quot;agent&quot;);\nresearcherFunction.addItemImport(&quot;crewai&quot;, &quot;Agent&quot;);\nresearcherFunction.addItemImport(&quot;crewai.project&quot;, &quot;agent&quot;);\npClass.getBody().add(researcherFunction);\n\n// Saving\nCapabilityLoader capabilityLoader = new CapabilityLoader();\nProgressMonitor progressMonitor = new PrintStreamProgressMonitor();\nRequirement&lt;ResourceSetRequirement, ResourceSet&gt; requirement = ServiceCapabilityFactory.createRequirement(ResourceSet.class);\nResourceSet resourceSet = capabilityLoader.loadOne(requirement, progressMonitor);\n\nFile pythonFile = new File(&quot;target/test.py&quot;).getCanonicalFile();\nResource pythonResource = resourceSet.createResource(URI.createFileURI(pythonFile.getAbsolutePath()));\npythonResource.getContents().add(pClass);\npythonResource.save(null);\n Output: from crewai import Agent\nfrom crewai.project import CrewBase, agent\n@CrewBase\nclass LatestAiDevelopment:\n    &quot;&quot;&quot;LatestAiDevelopment crew&quot;&quot;&quot;\n\n    # Learn more about YAML configuration files here:\n    # Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended\n    # Tasks: https://docs.crewai.com/concepts/tasks#yaml-configuration-recommended\n    agents_config = 'config/agents.yaml'\n    task_config = 'config/tasks.yaml'\n    @agent\n    def researcher(self) -&gt; Agent:\n        return Agent(\n        \tconfig=self.agents_config['researcher'],\n        \tverbose=True\n        )",
-    "timestamp": 1772632343560
+    "timestamp": 1782835264918
   },
   "references/eClassifiers/Import/references/eStructuralFeatures/module/index.html": {
     "path": "Import/Attributes/module",
-    "link-uuid": "03f2bcff-6bb0-429e-8aa5-098185be2917",
+    "link-uuid": "22dcbcc4-2a96-40e8-b67d-68eb50ee4a4f",
     "title": "module",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1772632343663
+    "timestamp": 1782835264997
   },
   "references/eClassifiers/Class/references/eStructuralFeatures/parents/index.html": {
     "path": "Class/Attributes/parents",
-    "link-uuid": "420295b0-1d10-4e46-ad2c-d04bf5eb6a30",
+    "link-uuid": "389f12e0-61e3-459b-a28d-15ae7ef2bdaf",
     "title": "parents",
     "content": "Type EString Multiplicity 0..*",
-    "timestamp": 1772632343609
+    "timestamp": 1782835264945
   },
   "references/eClassifiers/Import/references/eStructuralFeatures/alias/index.html": {
     "path": "Import/Attributes/alias",
-    "link-uuid": "5d2ef3f2-3853-4398-9b08-f4754b0b4d8d",
+    "link-uuid": "fc82bbe9-0d81-4edf-999a-7aa0d9e023c8",
     "title": "alias",
     "content": "Type EString Multiplicity 0..1",
-    "timestamp": 1772632343660
+    "timestamp": 1782835264994
   },
   "references/eClassifiers/Class/references/eStructuralFeatures/body/index.html": {
     "path": "Class/References/body",
-    "link-uuid": "104828bd-4e6a-4759-b0da-fb2cde1ebef5",
+    "link-uuid": "fec2dfda-3e61-4e89-a289-def286ad92db",
     "title": "body",
     "content": "Type Source Multiplicity 0..*",
-    "timestamp": 1772632343603
+    "timestamp": 1782835264942
   },
   "references/eClassifiers/Function/references/eStructuralFeatures/body/index.html": {
     "path": "Function/References/body",
-    "link-uuid": "1b8070e2-9cd6-4e70-a90e-0fedc1569386",
+    "link-uuid": "1147691f-7f84-4f57-9f85-2150bd88937e",
     "title": "body",
     "content": "Type Source Multiplicity 0..*",
-    "timestamp": 1772632343638
+    "timestamp": 1782835264972
   }
 }
